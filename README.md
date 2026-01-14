@@ -54,3 +54,7 @@ Image available at: https://hub.docker.com/r/davidokunade/devopsportfolio
 - Add CI/CD pipeline with GitHub Actions
 - Deploy to cloud platform (AWS/Azure)
 - Add monitoring and logging
+
+## Screenshot
+![Portfolio Website](![alt text](image.png))
+*DevOps portfolio website running in a Docker container*
