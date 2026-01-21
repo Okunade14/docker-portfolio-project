@@ -3,7 +3,7 @@ name : build and push Docker Image
 # trigger: run this workflow when code is pushed to the branch
 on:
  push:
-  branches: [main, showcase]
+  branches: [master]
 
 #Jobs: What to do
 jobs:
