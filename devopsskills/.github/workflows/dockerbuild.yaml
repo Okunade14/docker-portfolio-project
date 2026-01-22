@@ -24,11 +24,11 @@ jobs:
       
       # Step 3: Build Docker image
       - name: Build Docker image
-        run: docker build -t davidokunade/devopsskills:latest .
+        run: docker build -t davidokunade/devopsskills:v1 .
       
       # Step 4: Push to Docker Hub
       - name: Push to Docker Hub
-        run: docker push davidokunade/devopsskills:latest
+        run: docker push davidokunade/devopsskills:v1
       
       # Step 5: Success message
       - name: Image pushed
