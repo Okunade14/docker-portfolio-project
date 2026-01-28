@@ -8,11 +8,8 @@ on:
 # Jobs: What to do
 jobs:
   build:
-    runs-on: ${{matrix.os}}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
-    
+    runs-on: ubuntu-latest
+        
     steps:
       # Step 1: Get the code from GitHub
       - name: Checkout code
