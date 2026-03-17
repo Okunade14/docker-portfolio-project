@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-deployment
+  labels:
+    app: sample-portfolio
+spec:
+  replicas: 3  # Run 3 copies of your app
+  selector:
+    matchLabels:
+      app: sample-portfolio
+  template:
+    metadata:
+      labels:
+        app: sample-portfolio
+    spec:
+      containers:
+      - name: sample-portfolio
+        image: sample-portfolio:v1
+        imagePullPolicy: Never  # Use local image, don't pull from registry
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+  
